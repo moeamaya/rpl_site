@@ -23,9 +23,11 @@
 	    <div id="logo" class="wrap">
 		<img src="img/mit_logo.png">
 		<h1>Rapid Prototyping Lab</h1>
-		<a href="#" class="selected"><img src="img/reservations.png">RESERVATIONS</a>
-		<a href="#"><img src="img/hours.png">HOURS</a>
-		<a href="#"><img src="img/about.png">ABOUT</a>
+		<div id="menu">
+		    <a href="#" class="selected"><img src="img/reservations.png">RESERVATIONS</a>
+		    <a href="#"><img src="img/hours.png">HOURS</a>
+		    <a href="#"><img src="img/about.png">ABOUT</a>
+		</div>
 		<a href="mailto:rpl@mit.edu" id="email">questions? rpl@mit.edu<img src="img/email.png"></a> 
 	    </div>
 
@@ -44,11 +46,11 @@
 		    <div id="left-menu">
 			<h3>MACHINES</h3>
 			<ul class="options">
-			    <li class="selected">120 Epilog<span>></span></li>
-			    <li>60 Epilog</li>
-			    <li>Universal</li>
-			    <li>CNC Mill</li>
-			    <li>Waterjet</li>
+			    <li id="120" class="selected">120 Epilog<span>></span></li>
+			    <li id="60">60 Epilog<span></span></li>
+			    <li id="univ">Universal<span></span></li>
+			    <li>CNC Mill<span></span></li>
+			    <li>Waterjet<span></span></li>
 			</ul>
 			<h3>LASER NOTES</h3>
 			    <p>To reserve a slot, select one of the slots on the right.</p>
@@ -332,5 +334,7 @@
 	</footer>
 	
         <script src="js/main.js"></script>
+	
+	
     </body>
 </html>
