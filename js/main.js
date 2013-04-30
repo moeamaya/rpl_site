@@ -27,6 +27,13 @@ $(window).load(function(){
         if ($(el).attr('id') == 'univ'){
             var title = 'Universal'
         }
+        if ($(el).attr('id') == 'modela'){
+            var title = 'Roland Modela'
+        }
+        if ($(el).attr('id') == 'vinyl'){
+            var title = 'Vinyl Cutter'
+        }
+        
         
         $('#right').find('h2').text(title)
     }

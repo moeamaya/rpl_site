@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-    color: #3d3c25;
+    color: #3D4000;
 }
 
 body {
@@ -67,7 +67,7 @@ a{
    ========================================================================== */
 
 body{
-    background: #e2e1d5;
+    background: #D8D8D2;
 }
 
 .wrap{
@@ -79,9 +79,35 @@ header{
     width: 100%;
     height: 48px;
     background: white;
-    border-top: 3px solid #d3c11a;
-    border-bottom: 1px solid #c2c1af;
+    border-bottom: 16px solid #F3FF00;
     line-height: 48px;
+    font-weight: 700;
+}
+header h1{
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 48px;
+    height: 48px;
+    display: inline;
+}
+header img{
+    margin-top: -3px;
+    margin-right: 14px;
+}
+header a{
+    display: inline-block;
+    padding: 0 20px;
+    color: #3d3c25;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.5;
+}
+header a:hover{
+    opacity: 1.0;
+}
+header a img{
+    margin-top: -3px;
 }
 .selected{
     color: #3d3c25 !important;
@@ -89,32 +115,7 @@ header{
     cursor: default;
 }
 
-#logo{
-    font-weight: 700;
-}
-#logo h1{
-    margin: 0 20px 0 0;
-    padding: 0;
-    font-size: 16px;
-    display: inline;
-}
-#logo img{
-    margin-right: 14px;
-}
-#logo a{
-    display: inline-block;
-    padding: 0 20px;
-    color: #3d3c25;
-    font-size: 12px;
-    text-align: center;
-    opacity: 0.6;
-}
-#logo a:hover{
-    opacity: 1.0;
-}
-#logo a img{
-    margin-top: -3px;
-}
+
 #menu{
     display: inline;
 }
@@ -163,7 +164,7 @@ header{
     margin: 0;
     font-size: 11px;
     padding: 3px 8px;
-    background: #d3c11a;
+    background: #F3FF00;
 }
 ul.options{
     list-style: none;
@@ -237,8 +238,9 @@ table td {
     background: #eeede6;
 }
 table td:hover {
-    background: #99977a;
+    background: #3D4000;
     cursor: pointer;
+    color: #FFFFFF;
 }
 table td.thead{
     font-size: 12px;
@@ -253,6 +255,7 @@ table td.time{
 
 footer{
     margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 12px;
     color: #99977a;
     text-align: center;
