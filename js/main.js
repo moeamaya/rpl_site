@@ -1,7 +1,7 @@
 $(window).load(function(){
 
 
-    var machines = $('.options').find('li');
+    var machines = $('#student').find('li');
     
     $(machines).click( function(){
 	choice( $(this) )
