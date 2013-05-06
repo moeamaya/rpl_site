@@ -67,7 +67,7 @@ a{
    ========================================================================== */
 
 body{
-    background: #D8D8D2;
+    background: #CCCCC8;
 }
 
 .wrap{
@@ -129,7 +129,7 @@ header a img{
 #main-head{
     margin: 24px auto 0 auto;
     width: 1040px;
-    background: #eeede6;
+    background: #DBDBD7;
     height: 60px;
     line-height: 60px;
     font-size: 14px;
@@ -143,10 +143,12 @@ header a img{
 }
 
 #main{
+    clear: both;
+    overflow: auto;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 30px 0 50px 0;
     width: 1040px;
-    min-height: 700px;
+    min-height: 300px;
     background: #fff;
     border-bottom: 1px solid #c2c1af;
     border-right: 1px solid #c2c1af;
@@ -237,16 +239,15 @@ table{
     margin-top: 10px;
 }
 table td {
-    
     padding: 2px 6px;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     border-left: 4px solid #fff;
-    background: #eeede6;
+    background: #DBDBD7;
     font-size: 10px;
 }
 table td:hover {
-    background: #3F3904;
+    background: #262617;
     cursor: pointer;
     color: #FFFFFF;
 }
@@ -281,12 +282,34 @@ table td.box{
     width: 90px;
 }
 
+table.rplhours td:hover{
+    background: #DBDBD7;
+    cursor: auto;
+    color: #3D4000;
+}
+table.rplhours td.thead{
+    font-size: 12px;
+    background: #fff;
+    text-align: center;
+}
+
+table td.shift{
+    font-size: 10px;
+    background: #fff;
+    text-align: center;
+    width: 70px;
+    height: 24px;
+}
+table td.shift:hover{
+    color: #3D4000
+}
+
 
 footer{
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 12px;
-    color: #99977a;
+    color: #999893;
     text-align: center;
 }
 
