@@ -140,6 +140,7 @@ header a img{
 }
 #main-head img{
     margin-right: 14px;
+    margin-top: -2px;
 }
 
 #main{
@@ -171,12 +172,12 @@ header a img{
 
 ul.options{
     list-style: none;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 20px 0;
     padding: 0;
     font-size: 11px;
     font-weight: 700;
     text-transform:uppercase;
-    color: #99977a;
+    color: #B2B1AB;
 }
 ul.options li{
     cursor: pointer;
@@ -303,7 +304,26 @@ table td.shift{
 table td.shift:hover{
     color: #3D4000
 }
-
+#about{
+    margin-top: 20px;
+}
+#about h4{
+    margin: 0;
+}
+#about span{
+    clear: both;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+#about a{
+    color: #B2B1AB;
+    text-decoration: underline;
+}
+#about p{
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
 
 footer{
     margin-top: 30px;
