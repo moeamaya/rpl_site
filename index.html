@@ -9,8 +9,10 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+	
 
 	 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	 <script src="js/vendor/simplemodal.1.4.4.min.js"></script>
 	 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -352,12 +354,34 @@
 	</div>
 	</div>
 	
+	
 	<footer>
 	    &#xA9; 2013 RPL @ MIT Department of Architecture, 77 Massachusetts Avenue, Room 7-337, Cambridge, MA 02139 | (617) 253-7791
 	</footer>
 	
-        <script src="js/main.js"></script>
 	
+	<!-- modal content -->
+	<div id='confirm'>
+		<div class='header'><span>Confirm</span></div>
+		<div class='message'></div>
+		
+		<form>
+		    <select>
+			<option value="1">1 hour</option>
+			<option value="2">2 hours</option>
+		    </select>
+		    
+		</form>
+		
+		<div class='buttons'>
+			<div class='no simplemodal-close'>Submit</div>
+		</div>
+	</div>
+	
+	
+	
+        <script src="js/main.js"></script>
+	<script src="js/modal.js"></script>
 	
     </body>
 </html>
