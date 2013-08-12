@@ -56,10 +56,6 @@ textarea {
 }
 a{
     text-decoration: none;
-    -webkit-transition: all 0.20s ease-in-out;
-    -moz-transition: all 0.20s ease-in-out;
-    -ms-transition: all 0.20s ease-in-out;
-    -o-transition: all 0.20s ease-in-out;
 }
 
 /* ==========================================================================
@@ -114,11 +110,21 @@ header a img{
     opacity: 1.0 !important;
     cursor: default;
 }
-
+img.center{
+    display: block;
+    margin: 60px auto;
+}
 
 #menu{
     display: inline;
 }
+#menu a{
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+}
+
 #email{
     float: right;
     font-weight: 300;
@@ -230,7 +236,7 @@ ul.options li span{
     text-decoration: underline;
     cursor: default;
 }
-#right span{
+#machine-title span{
     margin-top: 16px;
     float: right;
     font-size: 11px;
@@ -238,28 +244,39 @@ ul.options li span{
 
 table{
     margin-top: 10px;
+    table-layout:fixed;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-collapse:collapse;
 }
 table td {
+    position: relative;
     padding: 2px 6px;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    border-left: 4px solid #fff;
+    border-top: 3px solid #fff;
+    border-right: 1px solid #fff !important;
     background: #DBDBD7;
     font-size: 10px;
-}
-table td:hover {
-    background: #262617;
-    cursor: pointer;
-    color: #FFFFFF;
+    width: 94px;
+    height: 15px;
+    overflow: hidden;
+    border-collapse: collapse;
 }
 
-table td.thead{
+table td.tableHead{
     font-size: 12px;
     background: #fff;
     text-align: center;
+    padding: 4px 0;
 }
-table td.thead:hover{
-    color: #3D4000
+table td.tableHeadSel{
+    font-size: 12px;
+    text-align: center;
+    background: #FBE212;
+    padding: 4px 0;
+}
+table td.highlight{
+    background: #FBE212;
 }
 
 table td.date{
@@ -270,28 +287,61 @@ table td.date{
 table td.date:hover{
     color: #3D4000
 }
-table td.time{
+table td.timeColumn{
     padding: 3px 12px 3px 0;
     font-size: 12px;
-    background: #fff;
     text-align: right;
+    width: 30px !important;
 }
-table td.time:hover{
-    color: #3D4000
-}
-table td.box{
-    width: 90px;
+table td.white {
+    background: #fff;
 }
 
-table.rplhours td:hover{
-    background: #DBDBD7;
-    cursor: auto;
+table td.timeSel{
+    padding: 3px 12px 3px 0;
+    font-size: 12px;
+    background: #FBE212;
+    text-align: right;
+    width: 50px !important;
+}
+table td.availableSlot a{
+    color: #DBDBD7;
+}
+table td.availableSlot:hover {
+    background: #BFBFBF;
+}
+table td.availableSlot:hover a{
     color: #3D4000;
 }
+
+table td.past{
+    background: #8C8C89;
+}
+table td.past_taken{
+    background: #7F7F7C;
+}
+table td.past_taken span{
+    position: absolute;
+    right: 4px;
+}
+
+table td.takenSlot{
+    background: #BFBFBF;
+}
+table td.takenSlot span{
+    position: absolute;
+    right: 4px;
+    background: #BFBFBF;
+}
+table td.takenSlot-admin{
+    background: #BFBFBF;
+}
+
 table.rplhours td.thead{
     font-size: 12px;
     background: #fff;
     text-align: center;
+    width: 80px;
 }
 
 table td.shift{
@@ -300,9 +350,6 @@ table td.shift{
     text-align: center;
     width: 70px;
     height: 24px;
-}
-table td.shift:hover{
-    color: #3D4000
 }
 #about{
     margin-top: 20px;
@@ -332,25 +379,6 @@ footer{
     color: #999893;
     text-align: center;
 }
-
-#confirm {display:none;}
-
-/* Overlay */
-#confirm-overlay {background-color:#000;}
-
-/* Container */
-#confirm-container {height:140px; width:420px; padding: 20px; font: 16px/22px; text-align:left; background:#fff; border:1px solid #888; border-radius: 3px;}
-#confirm-container .header {height:30px; line-height:30px; width:100%; font-weight:bold;}
-#confirm-container .header span {padding-left:8px;}
-#confirm-container .message {color:#333; font-size:14px; margin:0; padding:12px 4px 12px 8px;}
-#confirm-container .buttons {line-height:26px; width:160px; float:right; padding:10px 8px 0;} 
-#confirm-container .buttons div {float:right; margin-left:4px; width:70px; height:26px; color:#666; font-weight:bold; text-align:center; background:url(../img/confirm/button.gif) repeat-x; border:1px solid #bbb; cursor:pointer;} 
-#confirm-container a.modal-close,
-#confirm-container a.modal-close:link,
-#confirm-container a.modal-close:active,
-#confirm-container a.modal-close:visited {text-decoration:none; font-weight:bold; position:absolute; right:10px; top:2px; color:#fff;}
-#confirm-container a.modal-close:hover {color:#ccc;}
-
 
 
 
