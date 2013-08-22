@@ -6,7 +6,7 @@ $MACH_ID = "Laser-Epilog-2";
 
 
 //dependencies 
-include("../functions.php");
+include("functions.php");
 include("lib/calendar.php");
 $rpl = new RPLfunctions();
 
@@ -82,23 +82,8 @@ if ($ADMIN_PREFS["dynamics"]=="on" && $rpl->machine_exists($MACH_ID)){
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>RPL | Reserve</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-	
-
-	 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	 
-	 
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
+	<? include("head.php"); ?>
+	<title>RPL | Reserve</title>
     
 	<script>
 	    $(document).ready(function(){ 
@@ -126,19 +111,7 @@ if ($ADMIN_PREFS["dynamics"]=="on" && $rpl->machine_exists($MACH_ID)){
     </head>
     <body>
 
-        <header>
-	    <div class="wrap">
-		<img src="img/mit_logo.png">
-		<h1>Rapid Prototyping Lab</h1>
-		<div id="menu">
-		    <a href="#" class="selected"><img src="img/reservations.png">RESERVATIONS</a>
-		    <a href="hours.html"><img src="img/hours.png">HOURS</a>
-		    <a href="about.html"><img src="img/about.png">ABOUT</a>
-		</div>
-		<a href="mailto:rpl@mit.edu" id="email">questions? rpl@mit.edu<img src="img/email.png"></a> 
-	    </div>
-
-	</header>
+	<? include("header.php"); ?>
 	
 	<div id="shadow">
 	<div id="main-head">
@@ -148,7 +121,7 @@ if ($ADMIN_PREFS["dynamics"]=="on" && $rpl->machine_exists($MACH_ID)){
 	    </div>
 	</div>
 	<!-- setting height for ajax data -->
-	<div id="main" style="height: 730px">
+	<div id="main" style="min-height: 730px">
 	    <div class="wrap">
 		<div id="left">
 		    <div id="left-menu">
@@ -169,7 +142,7 @@ if ($ADMIN_PREFS["dynamics"]=="on" && $rpl->machine_exists($MACH_ID)){
 			</ul>			
 			
 			
-			<h3>TA SIGN UP</h3>
+			<h3 class="ta">TA SIGN UP</h3>
 			<ul class="options">
 			    <li id="buddy">Shopbot Buddy<span></span></li>
 			    <li id="n51">Shopbot N51<span></span></li>
@@ -205,11 +178,13 @@ if ($ADMIN_PREFS["dynamics"]=="on" && $rpl->machine_exists($MACH_ID)){
 	</div>
 	
 	
-	<footer>
-	    &#xA9; 2013 RPL @ MIT Department of Architecture, 77 Massachusetts Avenue, Room 7-337, Cambridge, MA 02139 | (617) 253-7791
-	</footer>
+	<? include("footer.php"); ?>
 	
-	
+	<script>
+	       $(document).ready( function(){
+		    $('#a_index').addClass('selected');
+	       })
+	</script>
 	
 	
         <script src="js/main.js"></script>
